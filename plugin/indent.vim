@@ -15,8 +15,8 @@ function! s:ConvertIndentation(line1, line2, expandtab, tabstop)
 	call histdel('search', -1)
 	call setpos('.', cursor_position)
 	if (a:line1 == 1) && (a:line2 == line('$'))
-		let &expandtab = a:expandtab
-		let &tabstop = tabstop
+		let &l:expandtab = a:expandtab
+		let &l:tabstop = tabstop
 	endif
 endfunction
 
