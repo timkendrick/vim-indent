@@ -1,6 +1,6 @@
 # vim-indent
 
->  Convert between tabs and spaces
+> Convert between tabs and spaces
 
 Convert the current buffer indentation from tabs to spaces, and vice versa. Adapted from [Super Retab](http://vim.wikia.com/wiki/VimTip1592).
 
