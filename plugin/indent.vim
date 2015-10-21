@@ -20,6 +20,6 @@ function! s:ConvertIndentation(line1, line2, expandtab, tabstop)
 	endif
 endfunction
 
-command! -nargs=? -range=% IndentSpacesToTabs call <SID>ConvertIndentation(<line1>, <line2>, 0, <q-args>)
-command! -nargs=? -range=% IndentTabsToSpaces call <SID>ConvertIndentation(<line1>, <line2>, 1, <q-args>)
-command! -nargs=? -range=% IndentCleanup call <SID>ConvertIndentation(<line1>, <line2>, &expandtab, <q-args>)
+command -nargs=? -range=% IndentSpacesToTabs call <SID>ConvertIndentation(<line1>, <line2>, 0, <q-args>)
+command -nargs=? -range=% IndentTabsToSpaces call <SID>ConvertIndentation(<line1>, <line2>, 1, <q-args>)
+command -nargs=? -range=% IndentCleanup call <SID>ConvertIndentation(<line1>, <line2>, &expandtab, <q-args>)
